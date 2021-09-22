@@ -1,0 +1,21 @@
+### Big O
+
+- O (Big O): upper bound meaning no o-notation is slower than this o-notation
+- Omega (big omega):  lower bound meaning no o-notation is faster than this o-notation
+- 0 (big theta): gives a tight bound on runtime
+
+- drop constants (coefficients) as we wish to describe the rate of increase not the exact 
+
+- also drop non dominant terms 
+    - O(N^2 +N) becomes O(N^2)
+- when worst case happens every once in a while, if it happens rarely then it is amortized
+
+- when you see a problem where number of elements in the algo gets halved each time this will be O(log n)
+- when you have recursive patterns with multiple calls the runtime will be O(branches^n)
+
+`O(1) < O(log x) < O(x) < O(x log x) <  O(x^2) < O(2^x) O(x!)`
+
+### Space Complexity
+- memory might also be analyzed by big O
+- stack space in recursive calls counts as well
+- calls would need to exist simultaneously to count
